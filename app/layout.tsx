@@ -9,8 +9,9 @@ const defaultUrl = process.env.VERCEL_URL
 
 export const metadata: Metadata = {
   metadataBase: new URL(defaultUrl),
-  title: "Next.js and Supabase Starter Kit",
-  description: "The fastest way to build apps with Next.js and Supabase",
+  title: "Ganesh Crane Service | Crane & Hydra Rental Agency in Bhilai",
+  description: "Ganesh Crane Service is a trusted crane and hydra rental agency in Bhilai, Chhattisgarh. Specialized in taking heavy lifting contracts for industrial and construction projects.",
+  keywords: "Crane rental service in Bhilai, Hydra rental service in Bhilai, Crane service in Chhattisgarh, Industrial crane rental in Bhilai, Hydra crane with operator in Bhilai, Heavy lifting services in Chhattisgarh",
 };
 
 const geistSans = Geist({

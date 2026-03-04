@@ -62,7 +62,29 @@
   * {
     @apply border-border;
   }
-  body {
-    @apply bg-background text-foreground;
+  html {
+    scroll-behavior: smooth;
   }
+  body {
+    @apply bg-background text-foreground antialiased;
+  }
+  ::selection {
+    @apply bg-amber-500/30 text-amber-900 dark:text-amber-100;
+  }
+}
+
+/* Custom Utilities */
+@layer utilities {
+  .text-shadow-glow {
+    text-shadow: 0 0 20px rgba(245, 158, 11, 0.4);
+  }
+}
+
+@keyframes scale-animate {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.1); }
+}
+
+.scale-animate {
+  animation: scale-animate 2s ease-in-out infinite;
 }
